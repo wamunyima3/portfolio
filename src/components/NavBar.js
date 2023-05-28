@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ThemeTogo from './ThemeTogo';
 
 const NavBar = () => {
   const [open,setOpen] = useState(false);
@@ -19,11 +18,7 @@ const NavBar = () => {
             <li><Link to='/'>Projects</Link> </li>
             <li><Link to='/'>Contact</Link> </li>
         </ul>
-        <div id='themeTogo'>
-            <HiMoon/>
-            <CgSun/>
-            <div id='themeTogoButton'></div>
-        </div>
+        <ThemeTogo/>
         <div id='nav-menu-icon' onClick={openMenu}>
           {open ? (<FaTimes/>) : (<FaBars/>)}
         </div>
