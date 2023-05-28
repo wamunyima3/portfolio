@@ -1,8 +1,14 @@
 #nav-bar{
     display:flex;
-    justify-content:end;
-    padding: 20px;
+    justify-content:flex-end;
+    padding: 1rem;
     align-items: center;
+}
+
+/* Navication text color */
+a{
+    text-decoration: none;
+    color: white;
 }
 
 #logo{
@@ -21,19 +27,14 @@
     list-style-type: none;
 }
 
-#nav-links li:hover, #nav-links li  a:hover{
+#nav-links li:hover, #nav-links li  a:hover,#nav-links li  a.active{
     text-decoration: underline;
     transform: scale(1.1);
     transition: all .2s ease-in-out;
     color: rgb(109, 255, 138);
 }
 
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
+/* Togo for changing between dark and light mode */
 #themeTogo{
     margin: 0 0 0 2rem;
     font-size: 1.2rem;
@@ -62,4 +63,40 @@ a{
     border-radius: 100%;
     background-color: rgb(109, 255, 138);
     position: absolute;
+}
+
+#nav-menu-icon{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 4px 0 0 1rem;
+    display: none;
+}
+
+/* Media queries */
+/* Reducing the font size of all elements */
+@media (max-width:1200px) {
+    html{
+        font-size: 90%;
+    }
+}
+
+@media (max-width:768px) {
+  #nav-menu-icon{
+    display: block;
+  }
+
+  #nav-links{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    font-size: 1.5rem;
+  }
+
+  #nav-links.active{
+    display: block;
+  }
 }
