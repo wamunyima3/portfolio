@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImage from './asserts/images/heroImage.jpg';
 
 const Hero = () => {
   return (
@@ -9,7 +8,6 @@ const Hero = () => {
         <h1>Wamunyima Mukelabai</h1>
         <h5>A software engineer skilled in</h5>
       </div>
-      <img id='hero-image' alt="Wamunyima's image" src={heroImage} />
     </div>
   );
 }
