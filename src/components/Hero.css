@@ -1,7 +1,7 @@
 #hero{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -36,21 +36,6 @@
 
 #socials a:hover{
     background-color: rgba(245, 245, 220, 0.406);
-    border: .1rem solid white;
-    transition: all .3s ease-in-out;
-}
-
-.btn{
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    background-color: transparent;
-    border: .1rem solid rgb(109, 255, 138);
-    border-radius: .5rem;
-}
-
-.btn:hover{
-    background-color: rgba(245, 245, 220, 0.406);
-    color: rgb(109, 255, 138);
     border: .1rem solid white;
     transition: all .3s ease-in-out;
 }

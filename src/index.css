@@ -11,3 +11,19 @@ body{
   background-color: #18191a;
   border: 1px solid white;
 }
+
+.btn{
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: .1rem solid rgb(109, 255, 138);
+  border-radius: .5rem;
+  display: inline-block;
+}
+
+.btn:hover{
+  background-color: rgba(245, 245, 220, 0.406);
+  color: rgb(109, 255, 138);
+  border: .1rem solid white;
+  transition: all .3s ease-in-out;
+}

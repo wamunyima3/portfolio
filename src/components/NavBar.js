@@ -13,7 +13,6 @@ const NavBar = () => {
         <h1 id='logo'><Link to='/'>Portifolio</Link></h1>
         <nav className={open ? 'nav-links active':'nav-links'}>
             <Link to='/' className='active'>Home</Link>
-            <Link to='/'>About</Link>
             <Link to='/'>Services</Link>
             <Link to='/'>Projects</Link>
             <Link to='/'>Contact</Link>
