@@ -1,8 +1,7 @@
 #hero{
     min-height: 100vh;
     display: flex;
-    justify-content: space-around;
-    margin: 0 3.5rem;
+    justify-content: center;
     align-items: center;
 }
 
@@ -12,7 +11,7 @@
 }
 
 #hero-text h1{
-    font-size: 4rem;
+    font-size: 3.9rem;
     font-weight: 700;
     line-height: 1.3;
 }

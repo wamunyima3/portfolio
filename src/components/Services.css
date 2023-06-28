@@ -5,7 +5,7 @@
   
   #services h2 {
     font-size: 3rem;
-    margin: 2rem;
+    margin: .5rem 2rem;
   }
   
   /* #services-container {
@@ -31,16 +31,25 @@
   #services-container{
     max-width: 100%;
     display: grid;
+    align-items: center;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit,minmax(0,1fr));
   }
 
   .service-card {
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    border: 0.1rem solid green;
+    padding: 4rem 2rem 3rem;
+    border-radius: 1rem;
     text-align: center;
+    overflow: hidden;
     background: rgba(34, 34, 34, 0.822);
-    margin: 1rem;
+  }
+
+  .service-card:hover{
+    transform: scale(1.02);
+    transition: .2s ease;
+    cursor:pointer;
+    box-shadow: 0 0 .5rem grey;
+    border: 0.1rem solid green;
   }
   
   .service-card h3 {
