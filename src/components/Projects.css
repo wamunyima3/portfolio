@@ -1,6 +1,6 @@
 #projects h2{
     font-size: 3rem;
-    margin: 8rem 0rem 1rem 8rem;
+    margin: 8rem 0rem 1rem 1rem;
 }
 
 #projects-container{
@@ -8,7 +8,6 @@
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2rem;
-    padding: 0 7rem;
 }
 
 .project-card{

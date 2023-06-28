@@ -1,32 +1,11 @@
 #services {
-    padding: 0 7rem;
     margin-bottom: 2rem;
   }
   
   #services h2 {
     font-size: 3rem;
-    margin: .5rem 2rem;
+    margin: 1rem;
   }
-  
-  /* #services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: start;
-    gap: 2rem;
-    max-width: 100%;
-  }
-  
-  .service-card {
-    flex: 1;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: 0.1rem solid green;
-    background: rgba(34, 34, 34, 0.822);
-    margin-bottom: 2rem;
-  } */
 
   #services-container{
     max-width: 100%;
