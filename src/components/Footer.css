@@ -5,7 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 8rem;
-    background-color: grey;
+    background-color: rgba(34, 34, 34, 0.822);
     position: absolute;
     width: 100%;
     left: 0;
@@ -16,11 +16,11 @@
     font-size: 1.2rem;
 }
 
-.footer-home-btn a{
+#footerA{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: .8rem;
     border-radius: .8rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.103);
 }

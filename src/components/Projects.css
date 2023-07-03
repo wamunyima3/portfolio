@@ -64,4 +64,9 @@
     height: 5rem;
     border-radius: 50%;
     background-color: rgba(211, 211, 211, 0.356);
+    transition: .2s ease;
+}
+
+.hover-layer a:hover{
+    background-color: rgba(211, 211, 211, 0.11);
 }
