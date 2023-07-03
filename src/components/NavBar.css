@@ -76,13 +76,6 @@ a{
 }
 
 /* Media queries */
-/* Reducing the font size of all elements */
-@media (max-width:1200px) {
-    html{
-        font-size: 90%;
-    }
-}
-
 @media (max-width:768px) {
   #nav-menu-icon{
     display: block;
@@ -99,8 +92,13 @@ a{
   .nav-links{
     width: 100%;
     position: absolute;
+    right: 0;
     top: 100%;
+    padding: 1rem 3%;
     display: none;
+    background: rgba(34, 34, 34, 0.822);
+    border-top: .1rem solid rgb(109, 255, 138);
+    box-shadow: 0 .1rem .5rem rgb(109, 255, 138);
   }
 
   .nav-links.active{

@@ -10,7 +10,6 @@ const NavBar = () => {
   const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
-    // Scroll event listener
     Events.scrollEvent.register('begin', () => {});
     Events.scrollEvent.register('end', () => {});
 
@@ -36,20 +35,20 @@ const NavBar = () => {
         </ScrollLink>
       </h1>
       <nav className={open ? 'nav-links active' : 'nav-links'}>
-        <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true} activeClass='active' onSetActive={handleSetActive}>
-          <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+        <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true} onSetActive={handleSetActive}>
+          <NavLink exact to='/' activeClassName={activeLink === 'hero'? 'active' : ''}>Home</NavLink>
         </ScrollLink>
 
-        <ScrollLink to='services' smooth={true} duration={500} offset={-70} spy={true} activeClass='active' onSetActive={handleSetActive}>
-          <NavLink to='/services' activeClassName='active'>Services</NavLink>
+        <ScrollLink to='services' smooth={true} duration={500} offset={-70} spy={true} onSetActive={handleSetActive}>
+          <NavLink to='/services' activeClassName={activeLink === 'services'? 'active' : ''}>Services</NavLink>
         </ScrollLink>
 
-        <ScrollLink to='projects' smooth={true} duration={500} offset={-70} spy={true} activeClass='active' onSetActive={handleSetActive}>
-          <NavLink to='/projects' activeClassName='active'>Projects</NavLink>
+        <ScrollLink to='projects' smooth={true} duration={500} offset={-70} spy={true} onSetActive={handleSetActive}>
+          <NavLink to='/projects' activeClassName={activeLink === 'projects'? 'active' : ''}>Projects</NavLink>
         </ScrollLink>
 
-        <ScrollLink to='contact' smooth={true} duration={500} offset={-70} spy={true} activeClass='active' onSetActive={handleSetActive}>
-          <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
+        <ScrollLink to='contact' smooth={true} duration={500} offset={-70} spy={true} onSetActive={handleSetActive}>
+          <NavLink to='/contact' activeClassName={activeLink === 'contact'? 'active' : ''}>Contact</NavLink>
         </ScrollLink>
       </nav>
       <ThemeTogo />

@@ -70,3 +70,15 @@
 .hover-layer a:hover{
     background-color: rgba(211, 211, 211, 0.11);
 }
+
+@media (max-width:768px){
+    #projects-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:615px){
+    #projects-container{
+        grid-template-columns: 1fr;
+    }
+}

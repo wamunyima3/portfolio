@@ -12,7 +12,8 @@
     display: grid;
     align-items: center;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit,minmax(0,1fr));
+    display: flex;
+    /* flex-wrap: wrap; */
   }
 
   .service-card {
@@ -39,4 +40,10 @@
     margin: 1rem 0;
     font-size: 1.3rem;
   }
-  
+
+  @media (max-width:768px) {
+    #services-container{
+      flex-direction: column;
+    }
+  }
+  /* media query 1442px and min 770px */

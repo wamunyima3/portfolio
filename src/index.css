@@ -27,3 +27,16 @@ body{
   border: .1rem solid white;
   transition: all .3s ease-in-out;
 }
+
+/* Reducing the font size of all elements */
+@media (max-width:1200px) {
+  html{
+      font-size: 90%;
+  }
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+}
