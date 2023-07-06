@@ -53,7 +53,7 @@ const NavBar = () => {
       </nav>
       <ThemeTogo />
       <div id='nav-menu-icon' onClick={openMenu}>
-        {open ? <FaTimes /> : <FaBars />}
+        {open ? <FaTimes color='white' /> : <FaBars color='white'/>}
       </div>
     </div>
   );

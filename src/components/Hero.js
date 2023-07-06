@@ -33,10 +33,6 @@ const Hero = () => {
         <h3>Welcome! My name is</h3>
         <h1>Wamunyima Mukelabai</h1>
         <h2>A software engineer skilled in <span ref={typedRef}></span></h2>
-        <div id='socials'>
-          <Link to='/'><FaFacebookF /></Link>
-          <Link to='/'><FaGithub /></Link>
-        </div>
         <Link className='btn' to='/'>Download CV</Link>
       </div>
       <img alt='HeroImage' src={HeroImage} />

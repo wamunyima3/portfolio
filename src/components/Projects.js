@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import { Link } from 'react-router-dom';
-import {FiExternalLink} from "react-icons/fi";
+import {FaExternalLinkAlt} from "react-icons/fa";
 import IDProject from '../asserts/idgen-dark.png'
 
 const Projects = () => {
@@ -14,7 +14,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>ID Generator</h4>
                     <p>This Project is still in progress and is not yet ready to be view by anyone</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
             <div className='project-card'>
@@ -22,7 +22,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>Family Tree</h4>
                     <p>This project is being developed under a private repository on gihub but you can view the hosted version of the project</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
             <div className='project-card'>
@@ -30,7 +30,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>Lesson Plan</h4>
                     <p>This Project is still in progress and is not yet ready to be view by anyone</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
             <div className='project-card'>
@@ -38,7 +38,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>mobile money transfer</h4>
                     <p>This Project is still in progress and is not yet ready to be view by anyone</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
             <div className='project-card'>
@@ -46,7 +46,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>AdverHub</h4>
                     <p>This app is developed to showcase the mobile development skills i have, its just a sample app</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
             <div className='project-card'>
@@ -54,7 +54,7 @@ const Projects = () => {
                 <div className='hover-layer'>
                     <h4>Redemption</h4>
                     <p>This software helps you to make bootable devices on linux</p>
-                    <Link to='#'><FiExternalLink/></Link>
+                    <Link to='#'><FaExternalLinkAlt color='white'/></Link>
                 </div>
             </div>
         </div>
