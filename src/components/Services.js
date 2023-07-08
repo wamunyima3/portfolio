@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaCode, FaScrewdriver, FaPen } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {

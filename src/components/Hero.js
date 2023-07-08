@@ -1,12 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import HeroImage from '../asserts/hero_two-final.png';
 import './Hero.css';
-import { FaFacebookF, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from './ThemeContext';
+
+// import { ThemeContext } from './components/ThemeContext';
 
 const Hero = () => {
   const typedRef = useRef(null);
+  const {theme} = useContext(ThemeContext);
+  console.log(theme);
+
+  // const { theme } = useContext(ThemeContext);
   useEffect(() => {
     const options = {
       strings: [

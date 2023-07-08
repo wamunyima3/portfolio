@@ -1,16 +1,20 @@
-import React from 'react'
-import './NavBar.css'
-import { CgSun } from "react-icons/cg";
-import { HiMoon } from "react-icons/hi";
-const ThemeTogo = () => {
-    const test = 'light';
-    return (
-        <div id='themeTogo'>
-                <HiMoon/>
-                <CgSun/>
-                <div id='themeTogoButton' style={test === 'light'?{left:'2px'}:{right:'2px'}}></div>
-        </div>
-    )
-}
+import React, { useContext } from 'react';
+import { CgSun } from 'react-icons/cg';
+import { HiMoon } from 'react-icons/hi';
+import { ThemeContext } from './ThemeContext';
 
-export default ThemeTogo
+const ThemeTogo = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  
+  return (
+    <div id='themeTogo' onClick={toggleTheme}>
+      <HiMoon className={theme === 'light' ? 'theme-icon active' : 'theme-icon'} />
+      <CgSun className={theme === 'dark' ? 'theme-icon active' : 'theme-icon'} />
+      <div id='themeTogoButton' className={theme === 'light' ? 'theme-button light' : 'theme-button dark'}
+        onClick={toggleTheme}
+      ></div>
+    </div>
+  );
+};
+
+export default ThemeTogo;

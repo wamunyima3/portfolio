@@ -1,5 +1,6 @@
 #services {
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   
   #services h2 {
@@ -45,6 +46,10 @@
   @media (max-width:768px) {
     #services-container{
       flex-direction: column;
+    }
+
+    #services {
+      margin-top: 8rem;
     }
   }
   /* media query 1442px and min 770px */

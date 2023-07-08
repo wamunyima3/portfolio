@@ -20,8 +20,8 @@ const Footer = () => {
             <Link to='/'><FaGithub color='white'/></Link>
         </span>
         <span className='footer-home-btn'>
-            <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true}>
-              <Link to='/' id='footerA'><FaArrowUp color='white' /></Link>
+            <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true} id='footerA'>
+              <FaArrowUp color='white'/>
             </ScrollLink>    
         </span>
       </div>

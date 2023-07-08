@@ -13,6 +13,7 @@
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 #logo{
@@ -48,6 +49,7 @@ a{
     position: relative;
     padding: 2px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 #themeTogo>*{
@@ -57,7 +59,6 @@ a{
 
 #themeTogo:hover{
     transform: scale(1.1);
-    transition: all .2s ease-in-out;
 }
 
 #themeTogoButton{
@@ -65,6 +66,15 @@ a{
     background-color: rgb(109, 255, 138);
     position: absolute;
 }
+
+.theme-button.light {
+    left: 2px;
+}
+  
+.theme-button.dark {
+    right: 2px;
+}
+  
 
 #nav-menu-icon{
     font-size: 1.2rem;
@@ -91,6 +101,7 @@ a{
     width: 100%;
     position: absolute;
     right: 0;
+    left: 0;
     top: 100%;
     padding: 1rem 3%;
     display: none;

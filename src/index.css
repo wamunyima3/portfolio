@@ -12,6 +12,16 @@ body{
   padding: 0 7rem;
 }
 
+/* Light Theme */
+.light body{
+  background-color: #ffff;
+}
+
+/* Dark Theme */
+.dark body{
+  background-color: #18191a;
+}
+
 .btn{
   padding: 1rem 2rem;
   font-size: 2rem;
