@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import {themeContext} from "./components/ThemeContext"
 
 function App() {
-  // if we want multiple pages we can create routes
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div>
+    <div style={{
+      padding: '0 7rem',
+      backgroundColor: darkMode ? '#18191a' : '',
+      color: darkMode ? 'white' : ''
+    }}>
         <NavBar/>
         <Hero id="hero"/>
         <Services id="services"/>

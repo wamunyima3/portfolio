@@ -6,6 +6,7 @@ import ThemeTogo from './ThemeTogo';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  
 
   useEffect(() => {
     Events.scrollEvent.register('begin', () => {});

@@ -3,14 +3,11 @@ import Typed from 'typed.js';
 import HeroImage from '../asserts/hero_two-final.png';
 import './Hero.css';
 import { Link } from 'react-router-dom';
-import { ThemeContext } from './ThemeContext';
 
 // import { ThemeContext } from './components/ThemeContext';
 
 const Hero = () => {
   const typedRef = useRef(null);
-  const {theme} = useContext(ThemeContext);
-  console.log(theme);
 
   // const { theme } = useContext(ThemeContext);
   useEffect(() => {

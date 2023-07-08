@@ -4,22 +4,6 @@
   padding: 0;
   margin: 0;
   font-family: 'Outfit', sans-serif;
-  color: white;
-}
-
-body{
-  background-color: #18191a;
-  padding: 0 7rem;
-}
-
-/* Light Theme */
-.light body{
-  background-color: #ffff;
-}
-
-/* Dark Theme */
-.dark body{
-  background-color: #18191a;
 }
 
 .btn{
