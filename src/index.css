@@ -25,7 +25,7 @@ body{
 .btn{
   padding: 1rem 2rem;
   font-size: 2rem;
-  background-color: transparent;
+  background-color: transparent; 
   border: .1rem solid rgb(109, 255, 138);
   border-radius: .5rem;
   display: inline-block;
