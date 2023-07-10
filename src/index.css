@@ -9,17 +9,32 @@
 .btn{
   padding: 1rem 2rem;
   font-size: 2rem;
-  background-color: transparent; 
-  border: .1rem solid rgb(109, 255, 138);
+  background-color: transparent;
   border-radius: .5rem;
   display: inline-block;
+  transition: all .3s ease-in-out;
 }
 
-.btn:hover{
-  background-color: rgba(245, 245, 220, 0.406);
+.btn.light{
+  border: .1rem solid RGB(0, 100, 0);
+  color: RGB(0, 100, 0);
+}
+
+.btn.dark{
+  border: .1rem solid rgb(109, 255, 138);
+  color: white;
+}
+
+.btn.dark:hover{
   color: rgb(109, 255, 138);
   border: .1rem solid white;
-  transition: all .3s ease-in-out;
+  background-color: rgba(245, 245, 220, 0.406);
+}
+
+.btn.light:hover{
+  background-color: RGB(0, 100, 0);
+  border: .1rem solid black;
+  color: white;
 }
 
 /* Reducing the font size of all elements */

@@ -3,12 +3,16 @@ import Typed from 'typed.js';
 import HeroImage from '../asserts/hero_two-final.png';
 import './Hero.css';
 import { Link } from 'react-router-dom';
+import { themeContext } from './ThemeContext';
 
 // import { ThemeContext } from './components/ThemeContext';
 
 const Hero = () => {
   const typedRef = useRef(null);
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
+  const darkGreen = {color:darkMode?'':' RGB(0, 100, 0)'};
   // const { theme } = useContext(ThemeContext);
   useEffect(() => {
     const options = {
@@ -33,10 +37,10 @@ const Hero = () => {
   return (
     <div id='hero'>
       <div id='hero-text'>
-        <h3>Welcome! My name is</h3>
-        <h1>Wamunyima Mukelabai</h1>
-        <h2>A software engineer skilled in <span ref={typedRef}></span></h2>
-        <Link className='btn' to='/'>Download CV</Link>
+        <h3 style={darkGreen}>Welcome! My name is</h3>
+        <h1 style={darkGreen}>Wamunyima Mukelabai</h1>
+        <h2 style={darkGreen}>A software engineer skilled in <span ref={typedRef}></span></h2>
+        <Link className={darkMode?'btn dark':'btn light'} to='/'>Download CV</Link>
       </div>
       <img alt='HeroImage' src={HeroImage} />
     </div>

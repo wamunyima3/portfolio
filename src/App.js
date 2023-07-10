@@ -12,15 +12,18 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div style={{
-      padding: '0 7rem',
       backgroundColor: darkMode ? '#18191a' : '',
-      color: darkMode ? 'white' : ''
+      color: darkMode ? 'white' : 'black'
     }}>
         <NavBar/>
-        <Hero id="hero"/>
-        <Services id="services"/>
-        <Projects id="projects"/>
-        <Contact id="contact"/>
+        <div style={{
+          padding:'0 7rem'
+        }}>
+          <Hero id="hero"/>
+          <Services id="services"/>
+          <Projects id="projects"/>
+          <Contact id="contact"/>
+        </div>
         <Footer/>
     </div>
   );
