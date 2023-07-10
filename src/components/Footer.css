@@ -1,15 +1,14 @@
 #footer{
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 8rem;
-    background-color: rgba(34, 34, 34, 0.822);
-    position: absolute;
     width: 100%;
     left: 0;
     border:0;
+    color: white;
 }
 
 #footer p{

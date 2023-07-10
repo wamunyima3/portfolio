@@ -8,7 +8,7 @@
     top:0;
     left: 0;
     z-index: 100;
-    background-color: rgba(34, 34, 34, 0.822);
+    color: white;
 }
 
 a{
@@ -23,6 +23,7 @@ a{
 #logo a:hover{
     color: rgb(109, 255, 138);
 }
+
 
 .nav-links>*{
     font-size: 1.2rem;
