@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-@media (max-width:365px){
+@media (max-width:740px){
     #footer{
         flex-direction: column-reverse;
     }

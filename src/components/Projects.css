@@ -80,3 +80,20 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media(max-width:810px){
+    .hover-layer {
+        transform: translateY(20%);
+        transition: .3s ease;
+        opacity: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .hover-layer a{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+    }
+}

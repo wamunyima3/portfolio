@@ -45,8 +45,9 @@
     }
 }
 
-/* @media (max-width:365px){
-    #hero img{
-        margin-top: 1rem;
+@media(max-width:810px){
+    #hero{
+        padding-top: 5rem;
+        min-height: 40vh;
     }
-} */
+}

@@ -2,18 +2,15 @@ import React, { useContext, useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import HeroImage from '../asserts/hero_two-final.png';
 import './Hero.css';
-import { Link } from 'react-router-dom';
 import { themeContext } from './ThemeContext';
-
-// import { ThemeContext } from './components/ThemeContext';
 
 const Hero = () => {
   const typedRef = useRef(null);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  const darkGreen = {color:darkMode?'':' RGB(0, 100, 0)'};
-  // const { theme } = useContext(ThemeContext);
+  const darkGreen = { color: darkMode ? '' : ' RGB(0, 100, 0)' };
+
   useEffect(() => {
     const options = {
       strings: [
@@ -25,27 +22,41 @@ const Hero = () => {
       backSpeed: 50,
       loop: true,
     };
-    // Initialize Typed.js
     const typed = new Typed(typedRef.current, options);
 
-    // Clean up the Typed instance
     return () => {
       typed.destroy();
     };
   }, []);
+
+  const handleDownloadCV = () => {
+    const downloadUrl = 'https://drive.google.com/uc?export=download&id=1vlXA2B-jEv2WpQZP3yOTE3XaU87I6_SP';
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = 'cv.pdf';
+    link.click();
+  };
 
   return (
     <div id='hero'>
       <div id='hero-text'>
         <h3 style={darkGreen}>Welcome! My name is</h3>
         <h1 style={darkGreen}>Wamunyima Mukelabai</h1>
-        <h2 style={darkGreen}>A software engineer skilled in <span ref={typedRef}></span></h2>
-        <Link className={darkMode?'btn dark':'btn light'} to='/'>Download CV</Link>
+        <h2 style={darkGreen}>
+          A software engineer skilled in <span ref={typedRef}></span>
+        </h2>
+        <a
+          className={darkMode ? 'btn dark' : 'btn light'}
+          href="javascript:void(0);"
+          onClick={handleDownloadCV}
+          download
+        >
+          Download CV
+        </a>
       </div>
       <img alt='HeroImage' src={HeroImage} />
     </div>
   );
 };
 
-
-export default Hero
+export default Hero;

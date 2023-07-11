@@ -9,7 +9,7 @@ import { themeContext } from './ThemeContext';
 const Projects = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-    const hoverLayer = {backgroundColor:darkMode?'rgba(0, 0, 0, 0.7)':'RGB(0, 100, 0)'};
+    const hoverLayer = {backgroundColor:darkMode?'rgba(0, 0, 0, 0.7)':'rgba(0, 100, 0, 0.800)'};
 
   return (
     <div id='projects'>
