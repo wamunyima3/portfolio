@@ -31,10 +31,12 @@ form textarea{
 
 .input-box input{
     width: 49%;
+    outline: none;
 }
 
 form textarea{
     resize: none;
+    outline: none;
 }
 
 .btn{
