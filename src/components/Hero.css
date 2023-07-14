@@ -17,8 +17,15 @@
 }
 #hero-text h2{
     margin-top: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
 }
+
+#hero-text h2.typed-container {
+    height: 2.4rem; /* Adjust the height as needed */
+    overflow:inherit;
+  }
+  
 
 #hero img {
     width: 35vw;
