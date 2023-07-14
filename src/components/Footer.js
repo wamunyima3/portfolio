@@ -22,13 +22,13 @@ const Footer = () => {
       <div id="group">
         <span id="socials">
           <a href="https://www.facebook.com/profile.php?id=100076511817470" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF color="lightblue" />
+            <FaFacebookF color="white" />
           </a>
           <a href="https://github.com/wamunyima3/" target="_blank" rel="noopener noreferrer">
             <FaGithub color="white" />
           </a>
           <a href="https://www.youtube.com/channel/UCTZBLTi6lUGBjwmWiFXq8Pw/" target="_blank" rel="noopener noreferrer">
-            <FaYoutube color="red" />
+            <FaYoutube color="white" />
           </a>
         </span>
         <span className="footer-home-btn">
