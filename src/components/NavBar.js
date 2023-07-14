@@ -37,19 +37,19 @@ const NavBar = () => {
         </ScrollLink>
       </h1>
       <nav className={open ? 'nav-links active' : 'nav-links'}>
-        <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true}>
+        <ScrollLink to='hero' smooth={true} duration={500} offset={-70} spy={true} onClick={openMenu}>
           Home
         </ScrollLink>
 
-        <ScrollLink to='services' smooth={true} duration={500} offset={-70} spy={true}>
+        <ScrollLink to='services' smooth={true} duration={500} offset={-70} spy={true} onClick={openMenu}>
           Services
         </ScrollLink>
 
-        <ScrollLink to='projects' smooth={true} duration={500} offset={-70} spy={true}>
+        <ScrollLink to='projects' smooth={true} duration={500} offset={-70} spy={true} onClick={openMenu}>
           Projects
         </ScrollLink>
 
-        <ScrollLink to='contact' smooth={true} duration={500} offset={-70} spy={true}>
+        <ScrollLink to='contact' smooth={true} duration={500} offset={-70} spy={true} onClick={openMenu}>
           Contact
         </ScrollLink>
       </nav>
