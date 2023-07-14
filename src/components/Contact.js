@@ -6,6 +6,11 @@ import { themeContext } from './ThemeContext';
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  // const phoneRegex = /^(\+260|260|0)[97]\d{8}$/; Zambian numbers
+  const phoneRegex = /^\+?\d+$/;
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const inputStyle = {
     border: darkMode ? '' : '.1rem solid rgb(0, 100, 0)',
     backgroundColor: darkMode ? 'rgba(34, 34, 34, 0.822)' : '',
@@ -47,14 +52,14 @@ const Contact = () => {
       <h2 style={{ color: darkMode ? '' : 'RGB(0, 100, 0)' }}>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-box">
-          <input type="text" name="fullName" placeholder="Fullname" style={inputStyle} />
-          <input type="email" name="emailAddress" placeholder="Email Address" style={inputStyle} />
+          <input type="text" pattern={nameRegex} name="fullName" placeholder="Fullname" style={inputStyle} required/>
+          <input type="email" pattern={emailRegex} name="emailAddress" placeholder="Email Address" style={inputStyle} required/>
         </div>
         <div className="input-box">
-          <input type="number" name="mobileNumber" placeholder="Mobile number"style={{ WebkitAppearance: 'textfield', MozAppearance: 'textfield', appearance: 'textfield', ...inputStyle }}/>
-          <input type="text" name="emailSubject" placeholder="Email Subject" style={inputStyle} />
+          <input type="tel" pattern={phoneRegex} name="mobileNumber" placeholder="Mobile number"style={{ WebkitAppearance: 'textfield', MozAppearance: 'textfield', appearance: 'textfield', ...inputStyle }} required/>
+          <input type="text" name="emailSubject" placeholder="Email Subject" style={inputStyle} required/>
         </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Your message" style={inputStyle}></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Your message" style={inputStyle} required></textarea>
         <input type="submit" value="Send Message" className={darkMode ? 'btn dark' : 'btn light'} />
         <div style={{ marginTop: '2rem', color: color === 'green' ? 'RGB(0, 100, 0)' : 'red', fontSize: '2rem' }}>{emailSentResult}</div>
       </form>
