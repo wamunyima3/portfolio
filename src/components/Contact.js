@@ -9,7 +9,7 @@ const Contact = () => {
   // const phoneRegex = /^(\+260|260|0)[97]\d{8}$/; Zambian numbers
   const phoneRegex = /^\+?\d+$/;
   const nameRegex = /^[a-zA-Z\s]+$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const inputStyle = {
     border: darkMode ? '' : '.1rem solid rgb(0, 100, 0)',
