@@ -16,7 +16,7 @@ const ThemeTogo = () => {
     if (storedMode) {
       theme.dispatch({ type: 'setMode', payload: storedMode === 'dark' });
     }
-  }, []);
+  }, [theme]); // Include 'theme' in the dependency array
 
   return (
     <div id='themeTogo' onClick={changeTheme}>
