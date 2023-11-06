@@ -7,7 +7,7 @@ const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   // const phoneRegex = /^(\+260|260|0)[97]\d{8}$/; Zambian numbers
-  const phoneRegex = /^\+?\d+$/;
+  const phoneRegex = /^[\d\s-()+]+$/;
   const nameRegex = /^[a-zA-Z\s'-]+$/;
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
