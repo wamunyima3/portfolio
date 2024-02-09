@@ -38,7 +38,7 @@ const Hero = React.forwardRef((props, ref) => {
         </h2>
         <a
           className={darkMode ? 'btn dark' : 'btn light'}
-          href="https://drive.google.com/uc?export=download&id=1vlXA2B-jEv2WpQZP3yOTE3XaU87I6_SP"
+          href="https://drive.google.com/uc?export=download&id=1KadXFu9hT1djhyzdotRQKB6AITJGz1d5"
           download="cv.pdf"
         >
           Download CV
